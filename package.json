@@ -1,0 +1,27 @@
+{
+  "name": "oplogger",
+  "version": "0.0.1",
+  "description": "MongoDB Operation Log Tailer",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TylerBrock/oplogger"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "prepublish": "npm run build"
+  },
+  "files": [ "lib" ],
+  "author": "Tyler Brock",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-plugin-transform-class-properties": "^6.16.0",
+    "babel-preset-latest": "^6.6.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.16.0",
+    "mongodb": "^2.1.14",
+    "mongodb-uri": "^0.9.7"
+  }
+}
