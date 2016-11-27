@@ -56,6 +56,7 @@ export default class OpLogger extends EventEmitter {
     const cursor = collection.find({ ts: { '$gte': ts } }, {
       tailable: true,
       awaitdata: true,
+      numberOfRetries: -1,
     });
 
     const stream = cursor.stream();
