@@ -1,6 +1,6 @@
 {
   "name": "oplogger",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "MongoDB Operation Log Tailer",
   "main": "lib/index.js",
   "repository": {
